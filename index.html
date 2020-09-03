@@ -9,15 +9,13 @@
     <link href="/goit-markup-hw-02-/css/modern-normalize.css">
 </head>
 <body>
-    
     <!--Шапка сайта-->
-    <header class="head-border">
-        <div class="main-conteiner flex-header mobile-header">
-        
-            <a href="./index.html" class="logo-decoration">
+    <header class="main-conteiner mobile-header">
+        <div>
+             <a href="./index.html" class="logo-decoration">
                 <span class="web">Web</span> <span class="logo">Studio</span>
                </a>
-            
+            </div>
         <button type="button" class="menu-button is-open" data-menu-button>
             <svg width="18px" height="18px">
                 <use class="icon-menu" href="../images/sprite-mobile.svg#icon-menu"></use>
@@ -25,35 +23,29 @@
             </svg>
             </button>
             <div class="menu-conteiner is-open"  data-menu>
-                
                 <nav class="header-nav">
-                    <div class="nav-mobile">
-                    <ul class="sitenav flex-header">
+                    <ul class="sitenav ">
                         <li class="item"><a  href="" class="link current">Студия</a></li>
                         <li class="item"><a  href="./portfolio.html" class="link">Портфолио</a></li>
                         <li class="item"><a  href="" class="link pop">Контакты</a></li>
                         
                     </ul>
-                </div>
-                    <div>
-                    <ul class="contact">
-                        <li class="item">
-                            <a href="mailto:info@devstudio.com" class="links">
-                                <svg class="icon-mail">
-                                    <use href="./images/sprite.svg#icon-e-mail"></use>
-                                </svg>info@devstudio.com</a>
-                        </li>
-                        <li class="item">
-                            <a href="tel:+380961111111" class="links">
-                                <svg class="icon-kontakt">
-                                    <use href="./images/sprite.svg#icon-kontakt">
-                                    </use>
-                                </svg>+38096-111-11-11</a>  
-                        </li>
-                    </ul>
-                </div>
-                </nav>
-                </div>
+            </nav>
+            <ul class="contact">
+                <li class="item">
+                    <a href="mailto:info@devstudio.com" class="links">
+                        <svg class="icon-mail">
+                            <use href="./images/sprite.svg#icon-e-mail"></use>
+                        </svg>info@devstudio.com</a>
+                </li>
+                <li class="item">
+                    <a href="tel:+380961111111" class="links">
+                        <svg class="icon-kontakt">
+                            <use href="./images/sprite.svg#icon-kontakt">
+                            </use>
+                        </svg>+38096-111-11-11</a>  
+                </li>
+            </ul>
             </div>
             
     </header>

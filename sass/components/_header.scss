@@ -50,14 +50,19 @@
 //    Меню окна
 
 .menu-conteiner{
+
     @media screen and(max-width:767px) {
         display: none;
         position: absolute;
-        top: 101%;
+        top: 100%;
         left: 0;
         width: 100%;
         height: 420px;
         background-color:$primary-white-color;
+    }
+    @media screen and(min-width:768px){
+        display: flex;
+        align-items: center;
     }
 
    
@@ -79,11 +84,11 @@
 .mobile-header{
     height: 60px;
     position: relative;
-    outline: 1px solid #ECECEC;
     @media screen and(min-width:768px){
         display: flex;
         height: 80px;
         align-items: center;
+        
     }
     
 }
@@ -104,25 +109,19 @@
     line-height: 1.15;
 } 
 .logo-decoration{
-    display: inline-flex;
+    display: inline-block;
     text-decoration: none;
     padding-top: 16px;
     padding-bottom: 16px;
-@media screen and(min-width:768px){
-        margin-right: 81px;
-        padding-right: 0;
-    }
+    padding-right: 0;
+
 }  
 @media screen and(max-width:767px){
     .sitenav .item:nth-child(-n + 2){
         margin-bottom: 40px;
     }
 }
-.nav-mobile{
-    @media screen and(min-width:768px){
-        margin-right: 70px;
-    }
-}
+
 
 .sitenav{
     margin: 0px;
@@ -136,14 +135,15 @@
     }
     @media screen and(min-width:768px){
         display: flex;
-
+        position: absolute;
+        top: 33px;
+        left: 250px;
        .item:nth-child(-n + 2){
            margin-right: 50px;
        }
-        
     }
-
-    .link{
+}
+ .sitenav .link{
             display: inline-flex;
             color: $title-text-color;
             font-weight: 500;
@@ -170,30 +170,30 @@
                 transition: $timing-function;
                 top: 30px;
             
-            } 
-            @media screen and(min-width:768px) {
-                font-size: 14px;
-                line-height: 1.1;
+            }  
+        }
+        @media screen and(min-width:768px) {
+            font-size: 14px;
+            line-height: 1.1;
 
-                &::before{
-                    content: "";
-                    display: block;
-                    position: absolute;
-                    width: 100%;
-                    background-color:$accent-color;
-                    height: 5px;
-                    border-radius: 4px;
-                    opacity: 0;
-                    transition: $timing-function;
-                    
+            &::before{
+                content: "";
+                display: block;
+                position: absolute;
+                width: 100%;
+                background-color:$accent-color;
+                height: 5px;
+                border-radius: 4px;
+                bottom: -29px;
+                opacity: 0;
+                transition: $timing-function;
                 
-                } 
-            }
             
+            } 
         }
         }
-     
-}
+    
+
 
 .sitenav .item  .link.current::before{
     opacity: 1;
@@ -210,10 +210,21 @@
         align-items: center;
         
     }
-    @media screen and(min-width:768px){
+    @media screen and(min-width:768px) and(max-width:1199px){
         display: flex;
         flex-direction: column;
+        position: absolute;
+        top: 20px;
+        right: 24px;
         
+    }
+    @media screen and(min-width:1200px){
+     display: flex;
+     align-items: flex-end;
+     position: absolute;
+    top: 20px;
+    right: 24px;
+     
     }
 
 }
@@ -235,11 +246,21 @@
         font-size: 12px;
         line-height: 1.2;
     }
+    @media screen and(min-width:1200px){
+        font-size: 14px;
+        line-height: 1.2;
+    }
 
 }
 .contact .item:nth-child(2n){
     @media screen and(max-width:767px) {
         margin-top: 16px;
+    }
+    @media screen and(min-width:768px){
+        margin-top: 10px;;
+    }
+    @media screen and(min-width:1200px){
+        margin-left: 35px;
     }
     
 }
@@ -260,12 +281,20 @@
     width: 14px;
     height: 10px;
     position: absolute;
-    top: 5px;
+    top: 3px;
+    left: -20px;
+    margin-right: 8px;
+  }
+  @media screen and(min-width:1200px) {
+    width: 16px;
+    height: 11px;
+    position: absolute;
+    top: 3px;
     left: -20px;
     margin-right: 8px;
   }
 }
-
+    
 
 .icon-kontakt{
     fill: currentColor;
@@ -281,9 +310,16 @@
         width: 10px;
         height: 14px;
         position: absolute;
-        top: 5px;
+        top: 0px;
         left: -20px;
-        margin-right: 8px;
+        margin-right: 6px;
       }
-
-}
+      @media screen and(min-width:1200px) {
+        width: 10px;
+        height: 15px;
+        position: absolute;
+        top: 0px;
+        left: -15px;
+        margin-right: 6px;
+      }
+    }

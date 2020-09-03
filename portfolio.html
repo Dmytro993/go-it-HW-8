@@ -11,49 +11,42 @@
 <body>
  
     <!--Шапка сайта-->
-    <header class="head-border">
-        <div class="main-conteiner flex-header mobile-header">
-        
-            <a href="./index.html" class="logo-decoration">
+    <header class="main-conteiner mobile-header">
+        <div>
+             <a href="./index.html" class="logo-decoration">
                 <span class="web">Web</span> <span class="logo">Studio</span>
                </a>
-            
+            </div>
         <button type="button" class="menu-button is-open" data-menu-button>
             <svg width="18px" height="18px">
                 <use class="icon-menu" href="../images/sprite-mobile.svg#icon-menu"></use>
                 <use class="icon-cross" href="../images/sprite-mobile.svg#icon-close"></use>
             </svg>
             </button>
-            <div class="menu-conteiner is-open"  data-menu>
-                
+            <div class="menu-conteiner " data-menu>
                 <nav class="header-nav">
-                    <div class="nav-mobile">
-                    <ul class="sitenav flex-header">
+                    <ul class="sitenav ">
                         <li class="item"><a  href="./index.html" class="link ">Студия</a></li>
                         <li class="item"><a  href="./portfolio.html" class="link current">Портфолио</a></li>
-                        <li class="item"><a  href="" class="link pop">Контакты</a></li>
+                        <li class="item"><a  href="" class="link ">Контакты</a></li>
                         
                     </ul>
-                </div>
-                    <div>
-                    <ul class="contact">
-                        <li class="item">
-                            <a href="mailto:info@devstudio.com" class="links">
-                                <svg class="icon-mail">
-                                    <use href="./images/sprite.svg#icon-e-mail"></use>
-                                </svg>info@devstudio.com</a>
-                        </li>
-                        <li class="item">
-                            <a href="tel:+380961111111" class="links">
-                                <svg class="icon-kontakt">
-                                    <use href="./images/sprite.svg#icon-kontakt">
-                                    </use>
-                                </svg>+38096-111-11-11</a>  
-                        </li>
-                    </ul>
-                </div>
-                </nav>
-                </div>
+            </nav>
+            <ul class="contact">
+                <li class="item">
+                    <a href="mailto:info@devstudio.com" class="links">
+                        <svg class="icon-mail">
+                            <use href="./images/sprite.svg#icon-e-mail"></use>
+                        </svg>info@devstudio.com</a>
+                </li>
+                <li class="item">
+                    <a href="tel:+380961111111" class="links">
+                        <svg class="icon-kontakt">
+                            <use href="./images/sprite.svg#icon-kontakt">
+                            </use>
+                        </svg>+38096-111-11-11</a>  
+                </li>
+            </ul>
             </div>
             
     </header>
@@ -220,7 +213,7 @@
         <div class="box main-conteiner">
             <div class="flex-address">
             <a href="index.html" class="decoration">
-            <span class="web">Web</span> 
+            <span class="web mob-web">Web</span> 
             <span class="logo-studio">Studio</span>
         </a>
     <address class="address">
@@ -230,7 +223,7 @@
     </address></div>
     <div class="flex-links">
         <span class="follow">Присоединяйтесь</span>
-        <ul class="comand">
+        <ul class="comand-footer">
             <li class="st-foot">
                 <a href="" aria-label="Ссылка на  Instagram "  class="hover-footer">
                     <svg class="instagram">
@@ -264,7 +257,7 @@
     <div class="email">
         <span class="follow">Подпишитесь на рассылку</span>
         <input type="text" name="Email" placeholder="E-mail" class="form-mail">
-        <button class="button button-item">Подписаться</button>
+        <button class="button-footer button-item">Подписаться</button>
     </div>
 </div>
     </footer>
