@@ -1,0 +1,289 @@
+.menu-button{
+    @media screen and(max-width:767px){
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 10px;
+        right: 15px;
+        margin:0;
+        padding: 0;
+        background-color:transparent;
+        border: none;
+        
+        &:hover .icon-cross,
+        &:focus .icon-cross{
+            color: $accent-color;
+        }
+        &:hover .icon-menu,
+        &:focus .icon-menu{
+            color: $accent-color;
+        }
+    }
+    @media screen and(min-width:768px) {
+        display: none;
+    }
+
+}
+
+.icon-cross{
+    fill: currentColor;
+    @media screen and(max-width:767px){
+    display: none;
+    }
+    }
+.menu-button.is-open .icon-cross{
+    @media screen and(max-width:767px){
+    display: block;
+    }
+}
+   .icon-menu{
+       fill: currentColor;
+    @media screen and(max-width:767px){
+    display: block;
+    }
+   }
+   .menu-button.is-open .icon-menu{
+    @media screen and(max-width:767px){
+       display: none;
+    }
+   }
+//    Меню окна
+
+.menu-conteiner{
+    @media screen and(max-width:767px) {
+        display: none;
+        position: absolute;
+        top: 101%;
+        left: 0;
+        width: 100%;
+        height: 420px;
+        background-color:$primary-white-color;
+    }
+
+   
+   
+}   
+.menu-conteiner.is-open{
+    display: block;
+}
+
+
+///////////////////////////////////////////////////////////
+.header-nav{
+    @media screen and(min-width:768px) {
+        display: flex;
+        align-items: center;
+    }
+   
+}
+.mobile-header{
+    height: 60px;
+    position: relative;
+    outline: 1px solid #ECECEC;
+    @media screen and(min-width:768px){
+        display: flex;
+        height: 80px;
+        align-items: center;
+    }
+    
+}
+.web{
+    color: $accent-color;
+    font-family: raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.15;
+
+ 
+ }
+
+.logo{
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.15;
+} 
+.logo-decoration{
+    display: inline-flex;
+    text-decoration: none;
+    padding-top: 16px;
+    padding-bottom: 16px;
+@media screen and(min-width:768px){
+        margin-right: 81px;
+        padding-right: 0;
+    }
+}  
+@media screen and(max-width:767px){
+    .sitenav .item:nth-child(-n + 2){
+        margin-bottom: 40px;
+    }
+}
+.nav-mobile{
+    @media screen and(min-width:768px){
+        margin-right: 70px;
+    }
+}
+
+.sitenav{
+    margin: 0px;
+    padding: 0px;
+    @media screen and (max-width:767px) {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
+    @media screen and(min-width:768px){
+        display: flex;
+
+       .item:nth-child(-n + 2){
+           margin-right: 50px;
+       }
+        
+    }
+
+    .link{
+            display: inline-flex;
+            color: $title-text-color;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            text-decoration: none;
+            transition: $timing-function; 
+
+            &:hover,
+            &:focus{
+                color: $accent-color;
+            }
+        @media screen and(max-width:767px) {
+            font-size: 18px;
+            line-height: 1.2;
+            &::before{
+                content: "";
+                display: block;
+                position: absolute;
+                width: 100%;
+                background-color:$accent-color;
+                height: 5px;
+                border-radius: 4px;
+                opacity: 0;
+                transition: $timing-function;
+                top: 30px;
+            
+            } 
+            @media screen and(min-width:768px) {
+                font-size: 14px;
+                line-height: 1.1;
+
+                &::before{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    background-color:$accent-color;
+                    height: 5px;
+                    border-radius: 4px;
+                    opacity: 0;
+                    transition: $timing-function;
+                    
+                
+                } 
+            }
+            
+        }
+        }
+     
+}
+
+.sitenav .item  .link.current::before{
+    opacity: 1;
+}
+.sitenav .item{
+    position: relative;
+}
+.contact{
+        margin: 0;
+        padding: 0;
+    @media screen and(max-width:767px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    @media screen and(min-width:768px){
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+}
+.links{
+    color:$primary-text-color;
+    font-weight: 500;
+    letter-spacing: 0.02em;  
+    text-decoration: none; 
+    transition: $timing-function; 
+    &:hover,
+    &:focus{
+        color: $accent-color;
+    }
+    @media screen and(max-width:767px) {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+    @media screen and(min-width:768px) {
+        font-size: 12px;
+        line-height: 1.2;
+    }
+
+}
+.contact .item:nth-child(2n){
+    @media screen and(max-width:767px) {
+        margin-top: 16px;
+    }
+    
+}
+
+.icon-mail{
+    fill: currentColor;
+    
+   
+  @media screen and(max-width:767px) {
+    width: 16px;
+    height: 12px;
+    position: absolute;
+    top: 5px;
+    left: -20px;
+    margin-right: 5px;
+  }
+  @media screen and(min-width:768px) {
+    width: 14px;
+    height: 10px;
+    position: absolute;
+    top: 5px;
+    left: -20px;
+    margin-right: 8px;
+  }
+}
+
+
+.icon-kontakt{
+    fill: currentColor;
+    @media screen and(max-width:767px) {
+        position: absolute;
+        top: 2px;
+        left: -13px;
+        width: 10px;
+        height: 15px;
+        margin-right: 5px;
+    }
+    @media screen and(min-width:768px) {
+        width: 10px;
+        height: 14px;
+        position: absolute;
+        top: 5px;
+        left: -20px;
+        margin-right: 8px;
+      }
+
+}
