@@ -797,7 +797,6 @@ header {
   position: absolute;
   max-width: 450px;
   width: 100%;
-  min-height: 581px;
   background-color: #fff;
   top: 50%;
   left: 50%;
@@ -879,6 +878,7 @@ input {
 
 .form-instruments {
   max-width: 370px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -886,7 +886,7 @@ input {
 
 @media screen and (min-width: 1200px) {
   .form-instruments {
-    max-width: 448px;
+    min-width: 448px;
   }
 }
 
@@ -903,7 +903,8 @@ input {
 
 .textarea {
   resize: none;
-  min-width: 370px;
+  max-width: 370px;
+  width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -940,28 +941,28 @@ input {
 }
 
 .textarea::-webkit-input-placeholder {
-  color: var(--primary-text-color);
+  color: #757575;
   font-size: 14px;
   line-height: 1.1;
   font-family: roboto;
 }
 
 .textarea:-ms-input-placeholder {
-  color: var(--primary-text-color);
+  color: #757575;
   font-size: 14px;
   line-height: 1.1;
   font-family: roboto;
 }
 
 .textarea::-ms-input-placeholder {
-  color: var(--primary-text-color);
+  color: #757575;
   font-size: 14px;
   line-height: 1.1;
   font-family: roboto;
 }
 
 .textarea::placeholder {
-  color: var(--primary-text-color);
+  color: #757575;
   font-size: 14px;
   line-height: 1.1;
   font-family: roboto;
@@ -1024,7 +1025,8 @@ span.text-agree.blue {
 .button-modal {
   color: #ffffff;
   background-color: #2196F3;
-  min-width: 200px;
+  max-width: 200px;
+  width: 100%;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -1912,6 +1914,8 @@ span.text-agree.blue {
   .presentation {
     max-width: 450px;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .presentation:last-child {
     margin-bottom: 0;
@@ -1923,6 +1927,8 @@ span.text-agree.blue {
     width: calc((100% - 60px) / 2);
     margin-right: 30px;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .presentation:nth-child(2n) {
     margin-right: 0;
