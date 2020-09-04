@@ -48,17 +48,126 @@
     }
 }
 }
+.card{
+width: 100%;
+max-width: 450px;
+}
 .border-card{
     border: 1px solid #EEEEEE;
 }
 .presentation{
     position: relative;
+    width: 100%;
+    padding-left: 0px;
+    @media screen and(max-width:767px) {
     max-width: 450px;
+    margin-bottom: 30px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    }
+    @media screen and(min-width:768px) and(max-width:1199px) {
+    width: calc((100% - 60px) / 2);
     margin-right: 30px;
     margin-bottom: 30px;
-    padding-left: 0px;
+    &:nth-child(2n){
+        margin-right: 0;
+    }
+    &:last-child{
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+    }
+    @media screen and(min-width:1200px) {
+        width: calc((100% - 90px) / 3);
+        margin-right: 30px;
+        margin-bottom: 30px;
+        &:nth-child(3n){
+            margin-right:0;
+        }
+        &:nth-child(n+7){
+            margin-bottom: 0;
+        }
+}
 
     &:hover{
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     }
 }
+
+.main-port{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 60px;
+}
+.main-port .text-black{
+    color: $title-text-color;
+    margin-top: 0px;
+    margin-bottom: 4px;
+    padding-left: 24px;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+}
+.pictures{
+    margin-bottom: 10px;
+    width: 100%;
+    
+    @media screen and(max-width:767px) {
+        max-width: 450px;
+        width: 100%;
+        
+    }
+}
+.text-port{
+    color: $primary-text-color;
+    font-size: 16px;
+    line-height: 1.87;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 24px;
+    padding-bottom: 20px;
+} 
+.main-port .port-links{
+    text-decoration: none;
+}
+.portfolio-text{
+    
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    
+    width: 100%;
+    height: 100%;
+    padding: 64px 24px;
+    margin: 0px;
+    font-size: 18px;
+    line-height: 28px;
+    background: rgba(33, 150, 243, 0.9);
+    color: $primary-white-color;
+    transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(101%);
+
+    @media screen and(max-width:767px) {
+        max-width: 450px;
+        width: 450px;
+        
+    }
+}
+.overlay{
+    position: relative;
+    max-width: 450px;
+    width: 100%;
+    height: 294px;
+    overflow: hidden;
+}
+.port-links:hover .portfolio-text,
+  .port-links:focus .portfolio-text{
+    transform: translateY(0px);
+    
+  }
+ 
