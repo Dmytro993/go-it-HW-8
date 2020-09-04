@@ -317,7 +317,7 @@ img {
 }
 
 header {
-  outline: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .icon-cross {
@@ -356,7 +356,7 @@ header {
   .menu-conteiner {
     display: block;
     position: absolute;
-    top: 101%;
+    top: 102%;
     left: 0;
     width: 100%;
     height: 420px;
@@ -529,6 +529,10 @@ header {
     -webkit-transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+}
+
+.sitenav .item .link.current {
+  color: #2196F3;
 }
 
 .sitenav .item .link.current::before {
@@ -718,6 +722,7 @@ header {
   color: #ffffff;
   text-align: center;
   max-width: 1600px;
+  width: 100%;
   height: 400px;
   margin-right: auto;
   margin-left: auto;
@@ -1129,6 +1134,14 @@ span.text-agree.blue {
   }
 }
 
+.skills .item {
+  margin-bottom: 30px;
+}
+
+.skills .item:last-child {
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .skills .item {
     width: calc((100% - 30px) / 2);
@@ -1309,9 +1322,6 @@ span.text-agree.blue {
   border-radius: 0px 0px 4px 4px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.comand-list:hover {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }

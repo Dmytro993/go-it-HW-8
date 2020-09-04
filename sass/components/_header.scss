@@ -25,7 +25,7 @@
 
 }
 header{
-    outline: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
 }
 
 .icon-cross{
@@ -57,7 +57,7 @@ header{
     @media screen and(max-width:767px) {
         display: block;
         position: absolute;
-        top: 101%;
+        top: 102%;
         left: 0;
         width: 100%;
         height: 420px;
@@ -198,8 +198,9 @@ header{
             } 
         }
         }
-    
-
+ .sitenav .item  .link.current{
+     color: $accent-color;
+ }
 
 .sitenav .item  .link.current::before{
     opacity: 1;
