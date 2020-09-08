@@ -1440,6 +1440,24 @@ span.text-agree.blue {
   width: 100%;
 }
 
+@media screen and (max-width: 767px) {
+  .photo {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .photo {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .photo {
+    max-width: 270px;
+  }
+}
+
 .us-work {
   padding-left: 15px;
   padding-right: 15px;
