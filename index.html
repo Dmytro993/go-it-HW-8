@@ -17,9 +17,9 @@
                </a>
             </div>
         <button type="button" class="menu-button is-open" data-menu-button>
-            <svg width="18px" height="18px">
-                <use class="icon-menu" href="../images/sprite-modal.svg#icon-menu"></use>
-                <use class="icon-cross" href="../images/sprite-modal.svg#icon-close"></use>
+            <svg width="24px" height="24px">
+                <use class="icon-menu" href="../images/sprite-menu.svg#icon-menu"></use>
+                <use class="icon-cross" href="../images/sprite-menu.svg#icon-close"></use>
             </svg>
             </button>
             <div class="menu-conteiner is-open"  data-menu>
@@ -175,13 +175,28 @@
         <div class="us-work main-conteiner">
         <h2 class="work-title">Чем мы занимаемся</h2>
         <ul class="links" >
-            <li class="description"><img src="./images/img (17) (1).jpg" alt="Технологии" width="370" height="294"/>
+            <li class="description"><img 
+                srcset="./images/pic1x1desctop.jpg 1x,
+                        ./images/pic1x2desctop.jpg 2x"
+                src="./images/img (17) (1).jpg" 
+                alt="Технологии" width="370" 
+                height="294"/>
             <h3 class="text-link">Десктопные приложения</h3></li>
       
-            <li class="description"><img src="./images/img (4) (1).jpg" alt="Разработки" width="370" height="294"/>
+            <li class="description"><img 
+                srcset="./images/pic2x1desctop.jpg 1x,
+                        ./images/pic2x2desctop.jpg 2x"
+                src="./images/img (4) (1).jpg" 
+                alt="Разработки" width="370" 
+                height="294"/>
             <h3 class="text-link">Мобильные приложения</h3></li>
        
-            <li class="description"><img src="./images/img (18) (1).jpg" alt="Компютер" width="370" height="294"/>
+            <li class="description"><img 
+                srcset="./images/pic3x1desctop.jpg  1x,
+                        ./images/pic3x2desctop.jpg 2x"
+                src="./images/img (18) (1).jpg" 
+                alt="Компютер" width="370" 
+                height="294"/>
             <h3 class="text-link">Дизайнерские решения</h3></li>
         </ul>
        </div>
@@ -192,7 +207,22 @@
         <h2 class="work-title">Наша команда</h2>
         <ul class="comand">
             <li class="comand-list">
-            <img src="./images/img (13) (1).jpg" alt="Член Команды" width="270" class="photo"/>
+                <picture class="photo">
+                    <source srcset="./images/bro1x1mobile.jpg 1x ,
+                                    ./images/bro1x2mobile.jpg 2x"
+                                    media="(max-width:767px)"/>
+                    <source srcset="./images/bro1x1tablet.jpg 1x ,
+                                    ./images/bro1x2tablet.jpg 2x"
+                                    media="(min-width:768px)"/>
+                    <source srcset="./images/bro1x1desctop.jpg 1x ,
+                                    ./images/bro1x2desctop.jpg 2x"
+                                    media="(min-width:1200px)"/>
+            <img 
+            src="./images/bro1x1mobile.jpg" 
+            alt="Член Команды" 
+            width="450" 
+            class="photo"/>
+        </picture>
             <h3 class="employers">Игорь Демьяненко</h3>
             <span class="job">Product Designer</span>
             <ul class="comunity">
@@ -228,7 +258,22 @@
             </li>
 
             <li class="comand-list">
-            <img src="./images/img (14) (1).jpg" alt="Член Команды" width="270" class="photo"/>
+                <picture class="photo">
+                    <source srcset="./images/bro2x1mobile.jpg 1x ,
+                                    ./images/bro2x2mobile.jpg 2x"
+                                    media="(max-width:767px)"/>
+                    <source srcset="./images/bro2x1tablet.jpg 1x ,
+                                    ./images/bro2x2tablet.jpg 2x"
+                                    media="(min-width:768px)"/>
+                    <source srcset="./images/bro2x1desctop.jpg 1x ,
+                                    ./images/bro2x2desctop.jpg 2x"
+                                    media="(min-width:1200px)"/>
+            <img 
+            src="./images/bro2x1mobile.jpg" 
+            alt="Член Команды" 
+            width="450" 
+            class="photo"/>
+            </picture>
             <h3 class="employers">Ольга Репина</h3>
             <span class="job">Frontend Developer</span>
             <ul class="comunity">
@@ -264,7 +309,22 @@
             </li>
 
             <li class="comand-list">
-            <img src="./images/img (15) (1).jpg" alt="Член Команды" width="270" class="photo"/>
+                <picture class="photo">
+                    <source srcset="./images/bro3x1mobile.jpg 1x ,
+                                    ./images/bro3x2mobile.jpg 2x"
+                                    media="(max-width:767px)"/>
+                    <source srcset="./images/bro3x1tablet.jpg 1x ,
+                                    ./images/bro3x2tablet.jpg 2x"
+                                    media="(min-width:768px)"/>
+                    <source srcset="./images/bro3x1desctop.jpg 1x ,
+                                    ./images/bro3x2desctop.jpg 2x"
+                                    media="(min-width:1200px)"/>
+            <img 
+            src="./images/bro3x1mobile.jpg" 
+            alt="Член Команды" 
+            width="450" 
+            class="photo"/>
+            </picture>
             <h3 class="employers">Николай Тарасов</h3>
             <span class="job">Marketing</span>
             <ul class="comunity">
@@ -300,7 +360,22 @@
             </li>
 
             <li class="comand-list">
-            <img src="./images/img (16) (1).jpg" alt="Член Команды" width="270" class="photo"/>
+                <picture class="photo">
+                    <source srcset="./images/bro4x1mobile.jpg 1x ,
+                                    ./images/bro4x2mobile.jpg 2x"
+                                    media="(max-width:767px)"/>
+                    <source srcset="./images/bro4x1tablet.jpg 1x ,
+                                    ./images/bro4x2tablet.jpg 2x"
+                                    media="(min-width:768px)"/>
+                    <source srcset="./images/bro4x1desctop.jpg 1x ,
+                                    ./images/bro4x2desctop.jpg 2x"
+                                    media="(min-width:1200px)"/>
+            <img 
+            src="./images/bro4x1mobile.jpg" 
+            alt="Член Команды" 
+            width="450" 
+            class="photo"/>
+            </picture>
             <h3 class="employers">Михаил Ермаков</h3>
             <span class="job">Ui Designer</span>
             <ul class="comunity">
